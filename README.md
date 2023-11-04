@@ -1,63 +1,81 @@
-# Saga Pattern Implementation For Distibuted Payment Transactions
-A demonstration project for handling long-running Payment Transactions in Microservice Architecture using Nodejs, Kafka, MongoDB
+# Saga Pattern Implementation For Distributed Payment Transactions
 
-### Concepts
-https://microservices.io/patterns/data/saga.html
+This project serves as a demonstrative example for effectively managing long-running Payment Transactions within a Microservice Architecture. Leveraging technologies such as Node.js, Kafka, and MongoDB, this implementation showcases the Saga pattern.
 
-### Successful Flow:
-![Implementation](./saga.png)
+For a detailed understanding of the Saga pattern, refer to [Microservices.io - Saga Pattern](https://microservices.io/patterns/data/saga.html).
 
-### Rollback Flow:
-![Implementation](./saga-rollback.png)
+## Successful Flow:
+![Successful Flow](./saga.png)
+
+## Rollback Flow:
+![Rollback Flow](./saga-rollback.png)
+
 ## Prerequisites
 
- - [Kafka](https://kafka.apache.org/downloads)
- - [Nodejs](https://nodejs.org/en/download/)
-- [MongoDB](https://www.mongodb.com/try/download/community)
+Ensure you have the following prerequisites installed:
 
+- [Kafka](https://kafka.apache.org/downloads)
+- [Node.js](https://nodejs.org/en/download/)
+- [MongoDB](https://www.mongodb.com/try/download/community)
 
 ## Setup
 
 ### Kafka Setup
 
-``` 
+Start Kafka using Docker Compose:
+
+```bash
 docker compose up -d 
 ```
 
-### Install packages
+### Install Packages
 
-```
+Install necessary packages for each service:
+
+```bash
 yarn --cwd ./kafkaBroker
 ```
 
-```
-yarn --cwd ./orchestatorService
+```bash
+yarn --cwd ./orchestratorService
 ```
 
-```
+```bash
 yarn --cwd ./orderService
 ```
 
-```
+```bash
 yarn --cwd ./paymentService
 ```
 
-### Create topics
-```
+### Create Topics
+
+Initialize Kafka topics:
+
+```bash
 yarn --cwd ./kafkaBroker start
 ```
 
+## Running the Services
 
-## Run
+Start the services in separate terminals:
 
-```
-cd orchestatorService && yarn start
+### Orchestrator Service
+
+```bash
+cd orchestratorService && yarn start
 ```
 
-```
+### Order Service
+
+```bash
 cd orderService && yarn start
 ```
 
-```
+### Payment Service
+
+```bash
 cd paymentService && yarn start
 ```
+
+Feel free to delve into the code and make adjustments to suit your specific requirements. If you encounter any questions or issues, don't hesitate to reach out. Happy coding!
