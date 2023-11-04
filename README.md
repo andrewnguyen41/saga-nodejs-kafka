@@ -21,14 +21,11 @@ A demonstration project for handling long-running Payment Transactions in Micros
 docker compose up -d 
 ```
 
-### Create topics
-```
-yarn --cwd ./kafkaBroker start
-```
-
-<!-- ### Service Setup -->
-
 ### Install packages
+
+```
+yarn --cwd ./kafkaBroker
+```
 
 ```
 yarn --cwd ./orchestatorService
@@ -40,6 +37,11 @@ yarn --cwd ./orderService
 
 ```
 yarn --cwd ./paymentService
+```
+
+### Create topics
+```
+yarn --cwd ./kafkaBroker start
 ```
 
 
