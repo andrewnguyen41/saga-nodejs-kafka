@@ -1,6 +1,6 @@
 # Saga Pattern Implementation For Distributed Payment Transactions
 
-This project serves as a demonstrative example for effectively managing long-running Payment Transactions within a Microservice Architecture. Leveraging technologies such as Node.js, Kafka, and MongoDB, this implementation showcases the Saga pattern.
+This project serves as a demonstrative example for effectively managing long-running Payment Transactions within a Microservice Architecture. Leveraging technologies such as Node.js, Kafka, and MongoDB, this implementation showcases the Saga Orchestator pattern.
 
 For a detailed understanding of the Saga pattern, refer to [Microservices.io - Saga Pattern](https://microservices.io/patterns/data/saga.html).
 
