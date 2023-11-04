@@ -1,10 +1,10 @@
 # Saga Pattern Implementation For Distibuted Payment Transactions
 A demonstration project for handling long-running Payment Transactions in Microservice Architecture using Nodejs, Kafka, MongoDB
 
-# Successful Flow:
+### Successful Flow:
 ![Implementation](./saga.png)
 
-# Rollback Flow:
+### Rollback Flow:
 ![Implementation](./saga-rollback.png)
 ## Prerequisites
 
