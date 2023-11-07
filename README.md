@@ -2,7 +2,9 @@
 
 This project serves as a demonstrative example for effectively managing long-running Payment Transactions within a Microservice Architecture. Leveraging technologies such as Node.js, Kafka, and MongoDB, this implementation showcases the Saga Orchestator pattern.
 
-For a detailed understanding of the Saga pattern, refer to [Microservices.io - Saga Pattern](https://microservices.io/patterns/data/saga.html).
+Saga Pattern is a method for managing a series of related tasks in a distributed system. It breaks down complex processes into smaller steps, ensuring that if any step fails, compensating actions are taken. This pattern is crucial for maintaining data integrity and reliability in systems with multiple interacting services, like microservices architectures.
+
+For a more detailed of the Saga pattern, refer to [Microservices.io - Saga Pattern](https://microservices.io/patterns/data/saga.html).
 
 ## Successful Flow:
 ![Successful Flow](./saga.png)
